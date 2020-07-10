@@ -10,6 +10,8 @@
     <Compile Remove="Migrations\20200708200552_addedOrder.Designer.cs" />
     <Compile Remove="Migrations\20200708200659_addedOrder.cs" />
     <Compile Remove="Migrations\20200708200659_addedOrder.Designer.cs" />
+    <Compile Remove="Migrations\20200709180209_addedOrderline.cs" />
+    <Compile Remove="Migrations\20200709180209_addedOrderline.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>

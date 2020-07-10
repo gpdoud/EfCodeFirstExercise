@@ -20,6 +20,8 @@ namespace EfCodeFirstExercise.Models {
         public int CustomerId { get; set; }
         public virtual Customer Customer { get; set; }
 
+        public virtual IEnumerable<Orderline> Orderlines { get; set; }
+
 
         public Order() { }
     }

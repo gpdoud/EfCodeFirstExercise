@@ -8,9 +8,21 @@ namespace EfCodeFirstExercise {
     class Program {
 
         static async Task Main(string[] args) {
-            await TestOrders();
+            await TestOrderlines();
+            //await TestOrders();
             //await TestProduct();
             //await TestCustomer();
+        }
+        static async Task TestOrderlines() {
+            var lineCtrl = new OrderlinesController();
+            var orderline = new Orderline() {
+                Id = 1, OrderId = 1, ProductId = 1, Quantity = 1
+            };
+            await lineCtrl.Change(orderline.Id, orderline);
+            orderline = new Orderline() {
+                Id = 0, OrderId = 1, ProductId = 3, Quantity = 3
+            };
+            //await lineCtrl.Create(orderline);
         }
         static async Task TestOrders() {
             var ordCtrl = new OrdersController();
